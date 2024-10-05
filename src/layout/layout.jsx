@@ -1,14 +1,13 @@
 import Header from "../common/header"
 import Footer from "./footer"
 import { Fragment } from "react"
-import { Outlet } from "react-router-dom"
 
-const Layout = () => {
+const Layout = ({ children }) => {
     return (
         <Fragment>
             <Header />
             <main>
-                <Outlet />
+                {children}
             </main>
             <Footer />
         </Fragment>

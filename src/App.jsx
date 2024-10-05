@@ -6,19 +6,15 @@ import HomePage from './pages/homepage';
 import './App.css'
 
 function App() {
-
   return (
-    <Fragment>
-      <Router>
+    <Router>
+      <Layout>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-          </Route>
+          <Route path="/" element={<HomePage />} />
         </Routes>
-      </Router>
-
-    </Fragment>
-  )
+      </Layout>
+    </Router>
+  );
 }
 
-export default App
+export default App;

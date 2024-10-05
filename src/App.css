@@ -1,7 +1,11 @@
-#root {
-}
+#root {}
 
 
 main {
   min-height: 80vh;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
 }

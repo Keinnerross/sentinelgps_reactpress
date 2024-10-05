@@ -1,7 +1,13 @@
+import Nav from "../layout/nav";
+import Logo from "./logo/logo";
+
 const Header = () => {
     return (
-        <div className="h-[20px] bg-slate-500">
-
+        <div className="flex justify-center">
+            <div className="w-[80vw] py-[20px]  flex items-center justify-between">
+                <Logo />
+                <Nav flex={true} />
+            </div>
         </div>
     )
 }
